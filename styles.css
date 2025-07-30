@@ -68,8 +68,17 @@ body {
     margin-top: 67px;
     box-shadow: 0 0 20px #7e6b47;
     border-radius: 50%;
-    border: 4px solid var(#7e6b47);
-    animation: flutuar 7s ease-in-out infinite;
+    border: 4px solid #7e6b47;
+    animation: flutuar 6s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 h1 {
