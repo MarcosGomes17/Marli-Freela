@@ -7,14 +7,14 @@
     <title>Marli Salão de Beleza</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <nav class="navegacao">
+    <nav class="navigation">
         <ul class="menu">
             <li>
                 <a href="#sobre" class="menu-link">Sobre</a>
@@ -34,8 +34,8 @@
         </ul>
     </nav>
 
-    <main id="sobre" class="cabecalho">
-        <img src="./assets/foto-perfil.jpg" alt=" fotofoto.jpg" class="foto-perfil">
+    <main id="sobre" class="header">
+        <img src="./assets/foto-perfil.jpg" alt=" fotofoto.jpg" class="profile-photo">
         <h1>Marli Salão de Beleza</h1>
         <p class="cabecalho-sub-titulo">Desde 2007, o Salão Marli oferece cuidados de beleza com dedicação e
             excelência.<br>
@@ -43,36 +43,36 @@
             com sua filha Beatriz,
             Nail Designer especializada.<br> Um salão de família onde tradição e qualidade andam juntas.</p>
 
-        <div class="fotos-salao">
-            <img src="./assets/IMG_1.JPEG" alt="imagem-1" class="imagem-1">
-            <img src="./assets/IMG_2.JPEG" alt="imagem-2" class="imagem-2">
-            <img src="./assets/IMG_3.JPEG" alt="imagem-3" class="imagem-3">
-            <img src="./assets/IMG_4.JPEG" alt="imagem-4" class="imagem-4">
+        <div class="salon-photos">
+            <img src="./assets/IMG_1.JPEG" alt="photo-1" class="photo-1">
+            <img src="./assets/IMG_2.JPEG" alt="photo-2" class="photo-2">
+            <img src="./assets/IMG_3.JPEG" alt="photo-3" class="photo-3">
+            <img src="./assets/IMG_4.JPEG" alt="photo-4" class="photo-4">
         </div>
     </main>
 
-    <section id="profissionais" class="profissionais">
+    <section id="profissionais" class="team">
         <h2>Profissionais</h2>
 
         <div class="equipe">
-            <div class="marli">
+            <div class="team-member marli">
                 <img src="./assets/perfil-marli.jpg" alt="Foto Marli">
                 <h2>Marli Costa</h2>
                 <h3>Cabeleleira</h3>
-                <p>Marli iniciou sua paixão pela beleza aos 16 anos e,<br> desde então,
-                    construiu uma carreira sólida e admirada.<br> Com mais de 40 anos de experiência,
-                    é uma especialista em cabelos,<br> reconhecida pelo cuidado, técnica e atenção aos detalhes.<br>
+                <p>Marli iniciou sua paixão pela beleza aos 16 anos e, desde então,
+                    construiu uma carreira sólida e admirada. Com mais de 40 anos de experiência,
+                    é uma especialista em cabelos, reconhecida pelo cuidado, técnica e atenção aos detalhes.<br>
                     Sua missão é realçar a beleza de cada cliente com profissionalismo e carinho.</p>
             </div>
 
-            <div class="beatriz">
+            <div class="team-member beatriz">
                 <img src="./assets/perfil-beatriz.jpg" alt="Foto Beatriz">
                 <h2>Beatriz Costa</h2>
                 <h3>Nail Designer</h3>
-                <p>Beatriz iniciou sua trajetória na área da beleza em 2022 e,<br>
-                    desde então, vem se especializando como nail designer.<br>Com 3 anos de experiência,
-                    é apaixonada por unhas e<br> domina diversos tipos de alongamentos e formatos,
-                    sempre buscando entregar um <br>resultado impecável e personalizado para cada cliente.</p>
+                <p>Beatriz iniciou sua trajetória na área da beleza em 2022 e,
+                    desde então, vem se especializando como nail designer.Com 3 anos de experiência,
+                    é apaixonada por unhas e domina diversos tipos de alongamentos e formatos,
+                    sempre buscando entregar um resultado impecável e personalizado para cada cliente.</p>
             </div>
         </div>
 
@@ -91,24 +91,24 @@
                 <li>Selagem</li>
                 <li>Relaxamento</li>
                 <li>Sobrancelha</li>
-                <li>Rena</li>
+                <li>Henna</li>
                 <li>Depilação em cera</li>
             </ul>
 
-            <ul>
-                <li>Alongamento fibra de vidro</li>
-                <li>Alongamento molde F1</li>
-                <li>Alongamento Gel Tip</li>
+            <ul class="lista2">
                 <li>Esmaltação em Gel</li>
-                <li>Blindagem</li> 
                 <li>Banho de Gel</li>
+                <li>Blindagem</li> 
                 <li>Manicure</li>
                 <li>Pedicure</li>
+                <li>Alongamento molde F1</li>
+                <li>Alongamento Gel Tip</li>
+                <li>Alongamento fibra de vidro</li>
             </ul>
         </div>
     </section>
 
-    <section class="Localização">
+    <section class="location">
         <h2 id="localizacao">Localização</h2>
 
         <iframe
@@ -138,7 +138,7 @@
         </div>
     </section>
 
-    <section class="contatos">
+    <section class="contact">
         <h2 id="contatos" class="contatos-titulo">Entre em Contato</h2>
 
         <div class="container-formularios">
@@ -151,7 +151,7 @@
                     <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6"
                         id="mensagem-marli"></textarea>
                 </div>
-                <button type="submit" class="botao-form">Enviar WhatsApp</button>
+                <button type="submit" class="form-button">Enviar WhatsApp</button>
             </form>
 
             <form class="formulario-contato" onsubmit="enviarWhats(event)">
@@ -163,7 +163,7 @@
                     <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6"
                         id="mensagem-beatriz"></textarea>
                 </div>
-                <button type="submit" class="botao-form">Enviar WhatsApp</button>
+                <button type="submit" class="form-button">Enviar WhatsApp</button>
             </form>
         </div>
     </section>
@@ -190,6 +190,7 @@
     </footer>
 
     <script src="./scripts.js"></script>
+
 </body>
 
 </html>
